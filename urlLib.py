@@ -97,4 +97,4 @@ for i in range(0,len(allurl)):
         if hasattr(e,'code'):
             print(e.code)
         if hasattr(e,'reason'):
-            print(e.reason)
+            print(e.reason) 
