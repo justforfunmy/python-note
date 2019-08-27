@@ -19,6 +19,8 @@ y=[4,3,6,1]
 # plb.plot(x,y,'o')
 # plb.show()
 
+
+
 csv_file=csv.reader(open("../files/watcher.csv",'r',encoding='UTF-8'))
 name = []
 votes = []
@@ -26,4 +28,7 @@ for row in csv_file:
     name.append(row[0])
     votes.append(row[2])
 plb.plot(name,votes)
+plb.title('show')
+plb.xlabel('name')
+plb.ylabel('votes')
 plb.show()
