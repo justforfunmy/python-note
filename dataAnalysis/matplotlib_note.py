@@ -13,14 +13,15 @@ mpl.rcParams['axes.unicode_minus']=False #用来正常显示负号
 
 # 折线图/散点图plot
 # 直方图hist
-
+'''
 x=['1s','sdf',3,4]
 y=[4,3,6,1]
 # plb.plot(x,y,'o')
 # plb.show()
+'''
 
 
-
+'''
 csv_file=csv.reader(open("../files/watcher.csv",'r',encoding='UTF-8'))
 name = []
 votes = []
@@ -31,4 +32,30 @@ plb.plot(name,votes)
 plb.title('show')
 plb.xlabel('name')
 plb.ylabel('votes')
+plb.show()
+'''
+
+'''
+data = np.random.normal(10.0,1.0,10000)
+plb.hist(data)
+'''
+'''
+data = np.random.random_integers(1,25,1000)
+sty = np.arange(2,17,4)
+plb.hist(data,sty)
+plb.show()
+'''
+# 子图
+plb.subplot(2,2,1)
+x = [3,2,6,4,8]
+y = [3,2,5,2,5]
+plb.plot(x,y)
+plb.subplot(2,2,2)
+x2 = [3,2,6,4,8]
+y2 = [3,2,5,2,5]
+plb.plot(x2,y2)
+plb.subplot(2,1,2)
+x3 = [1,2,6,4,8]
+y3 = [3,2,5,2,5]
+plb.plot(x3,y3)
 plb.show()
